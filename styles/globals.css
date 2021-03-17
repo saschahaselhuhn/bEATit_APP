@@ -6,6 +6,27 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+@font-face {
+  font-family: "TrajanProRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("TrajanPro-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "TrajanProBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("TrajanPro-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SilliiWillinnRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("SilliiWillinnFont.woff") format("woff");
+}
+
 a {
   color: inherit;
   text-decoration: none;
