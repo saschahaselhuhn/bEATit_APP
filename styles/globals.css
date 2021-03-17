@@ -7,25 +7,24 @@ body {
 }
 
 @font-face {
-  font-family: "Trajan Pro Regular";
+  font-family: "TrajanProRegular";
   font-style: normal;
   font-weight: normal;
-  src: local("Trajan Pro Regular"), url("TrajanPro-Regular.woff") format("woff");
+  src: url("TrajanPro-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Trajan Pro Bold";
+  font-family: "TrajanProBold";
   font-style: normal;
   font-weight: normal;
-  src: local("Trajan Pro Bold"), url("TrajanPro-Bold.woff") format("woff");
+  src: url("TrajanPro-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Sillii Willinn Regular";
+  font-family: "SilliiWillinnRegular";
   font-style: normal;
   font-weight: normal;
-  src: local("Sillii Willinn Regular"),
-    url("SilliiWillinnFont.woff") format("woff");
+  src: url("SilliiWillinnFont.woff") format("woff");
 }
 
 a {
