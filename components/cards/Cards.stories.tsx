@@ -11,7 +11,7 @@ const Template: Story<Props> = (args) => <Cards {...args} />;
 
 export const RecipeCard = Template.bind({});
 RecipeCard.args = {
-  cardrecipesrc: "string",
-  cardrecipename: "string",
-  cardopenrecipesrc: "string",
+  cardrecipesrc: "./images/foodimages/paellamallorquina.jpg",
+  cardrecipename: "Paella Mallorquina",
+  cardopenrecipesrc: "./images/go.svg",
 };

@@ -1,3 +1,52 @@
-.recipecardname {
+.recipecard {
+  border: 3px solid var(--MainClr);
+  border-radius: 15px;
+  padding: 5px;
+  width: 80vw;
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0 0;
+  grid-template-areas:
+    "Img Img Name Name Name"
+    "Img Img Name Name Name"
+    "Img Img Name Name Name"
+    "Img Img Button Button Button";
+}
+
+.recipecardimgdiv {
+  grid-area: Img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.recipecardnamediv {
+  grid-area: Name;
   font-family: var(--StyleFont);
+  color: var(--MainClr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+.recipecardopendiv {
+  grid-area: Button;
+  text-align: right;
+}
+
+.recipecardimgdiv img {
+  width: 100%;
+  border-radius: 50%;
+  border: 0.4em solid var(--MainClr);
+  margin-bottom: 0;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+}
+.recipecardopendiv img {
+  width: 70%;
 }

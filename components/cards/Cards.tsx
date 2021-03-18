@@ -13,9 +13,15 @@ function RecipeCard({
 }: Props) {
   return (
     <div className={styles.recipecard}>
-      <img className={styles.recipecardimg} src={cardrecipesrc} />
-      <h1 className={styles.recipecardname}>{cardrecipename}</h1>
-      <img className={styles.recipecardopen} src={cardopenrecipesrc} />
+      <div className={styles.recipecardimgdiv}>
+        <img src={cardrecipesrc} />
+      </div>
+      <div className={styles.recipecardnamediv}>
+        <h1>{cardrecipename}</h1>
+      </div>
+      <div className={styles.recipecardopendiv}>
+        <img src={cardopenrecipesrc} />
+      </div>
     </div>
   );
 }
