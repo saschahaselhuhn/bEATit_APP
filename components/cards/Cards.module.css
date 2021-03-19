@@ -7,6 +7,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  max-height: 150px;
   grid-template-areas:
     "Img Img Name Name Name"
     "Img Img Name Name Name"
@@ -16,9 +17,7 @@
 
 .recipeImg {
   grid-area: Img;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: left;
 }
 .recipeName {
   text-align: center;
@@ -45,7 +44,7 @@
 }
 
 .recipeImg img {
-  width: 100%;
+  max-height: 100%;
   border-radius: 50%;
   border: 0.4em solid var(--MainClr);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
