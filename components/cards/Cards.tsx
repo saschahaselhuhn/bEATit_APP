@@ -1,29 +1,25 @@
 import styles from "./Cards.module.css";
 
 export type Props = {
-  cardrecipesrc: string;
-  cardrecipename: string;
-  cardopenrecipesrc: string;
+  recipeSrc: string;
+  recipeName: string;
+  openrecipeSrc: string;
 };
 
-function RecipeCard({
-  cardrecipesrc,
-  cardrecipename,
-  cardopenrecipesrc,
-}: Props) {
+function Recipe({ recipeSrc, recipeName, openrecipeSrc }: Props) {
   return (
-    <div className={styles.recipecard}>
-      <div className={styles.recipecardimgdiv}>
-        <img src={cardrecipesrc} />
+    <div className={styles.recipe}>
+      <div className={styles.recipeImg}>
+        <img src={recipeSrc} />
       </div>
-      <div className={styles.recipecardnamediv}>
-        <h1>{cardrecipename}</h1>
+      <div className={styles.recipeName}>
+        <h3>{recipeName}</h3>
       </div>
-      <div className={styles.recipecardopendiv}>
-        <img src={cardopenrecipesrc} />
+      <div className={styles.recipeOpen}>
+        <img src={openrecipeSrc} />
       </div>
     </div>
   );
 }
 
-export default RecipeCard;
+export default Recipe;
