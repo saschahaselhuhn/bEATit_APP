@@ -1,5 +1,7 @@
 html,
 body {
+  width: 100vw;
+  max-height: 100vh;
   background-color: black;
   background-image: url(/images/woodenBG@2x.png);
   background-size: cover;
