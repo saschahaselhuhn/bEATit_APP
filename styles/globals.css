@@ -1,5 +1,8 @@
 html,
 body {
+  background-color: black;
+  background-image: url(/images/woodenBG@2x.png);
+  background-size: cover;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -10,21 +13,22 @@ body {
   font-family: "TrajanProRegular";
   font-style: normal;
   font-weight: normal;
-  src: url("TrajanPro-Regular.woff") format("woff");
+  src: url("/fonts/TrajanPro-Regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "TrajanProBold";
   font-style: normal;
   font-weight: normal;
-  src: url("TrajanPro-Bold.woff") format("woff");
+  src: url("/fonts/TrajanPro-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "SilliiWillinnRegular";
   font-style: normal;
-  font-weight: normal;
-  src: url("SilliiWillinnFont.woff") format("woff");
+  font-weight: light;
+  src: local("Sillii Willinn Regular"),
+    url("/fonts/SilliiWillinnFont.woff") format("woff");
 }
 
 a {
@@ -34,4 +38,17 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+:root {
+  /* root colors */
+  --MainClr: #890000;
+  --PrimaryClr: white;
+  --InputBgClr: #f2f2f2;
+  --InputTxtClr: black;
+
+  /* root fonts */
+  --BodyFont: "TrajanProRegular", sans-serif;
+  --BodyBoldFont: "TrajanProBold", sans-serif;
+  --StyleFont: "SilliiwillinnRegular", sans-serif;
 }

@@ -1,8 +1,10 @@
 .btn {
   border-radius: 10px;
+  font-family: var(--BodyFont);
+  font-size: 1em;
 }
 
 .primary {
-  color: antiquewhite;
   background: black;
+  color: var(--PrimaryClr);
 }
