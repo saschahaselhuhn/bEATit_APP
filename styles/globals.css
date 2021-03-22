@@ -1,5 +1,8 @@
 html,
 body {
+  background-color: black;
+  background-image: url(/images/woodenBG@2x.png);
+  background-size: cover;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -23,7 +26,7 @@ body {
 @font-face {
   font-family: "SilliiWillinnRegular";
   font-style: normal;
-  font-weight: normal;
+  font-weight: light;
   src: local("Sillii Willinn Regular"),
     url("/fonts/SilliiWillinnFont.woff") format("woff");
 }
