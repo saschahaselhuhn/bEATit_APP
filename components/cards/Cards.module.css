@@ -60,10 +60,10 @@
 /* KEYFRAMES */
 
 /**
- * ----------------------------------------
- * animation slide-in-elliptic-top-fwd
- * ----------------------------------------
- */
+   * ----------------------------------------
+   * animation slide-in-elliptic-top-fwd
+   * ----------------------------------------
+   */
 @-webkit-keyframes slide-in-elliptic-top-fwd {
   0% {
     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
