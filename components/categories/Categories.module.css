@@ -1,69 +1,38 @@
-.recipe {
+.category {
+  border-radius: 50%;
   border: 3px solid var(--MainClr);
-  border-radius: 15px;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.76);
+  width: 30vw;
+  height: 30vw;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  max-height: 150px;
-  grid-template-areas:
-    "Img Img Name Name Name"
-    "Img Img Name Name Name"
-    "Img Img Name Name Name"
-    "Img Img Button Button Button";
   animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
+  overflow: hidden;
 }
 
-.recipeImg {
-  grid-area: Img;
-  text-align: left;
+.image {
+  width: 100%;
 }
-.recipeName {
+.name {
+  font-size: 0.6;
   text-align: center;
-  line-height: 1.5em;
-  grid-area: Name;
-  font-size: 1.5em;
-  font-family: var(--StyleFont);
+  background-color: white;
   color: var(--MainClr);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-top: -50%;
+  position: relative;
+  z-index: 2;
+  font-family: var(--StyleFont);
 }
-
-.recipeName h3 {
+h3 {
   margin: unset;
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.48);
-  font-weight: lighter;
-}
-
-.recipeOpen {
-  grid-area: Button;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.recipeImg img {
-  max-height: 100%;
-  border-radius: 50%;
-  border: 4px solid var(--MainClr);
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
-}
-.recipeOpen img {
-  width: 60%;
 }
 
 /* KEYFRAMES */
 
 /**
-   * ----------------------------------------
-   * animation slide-in-elliptic-top-fwd
-   * ----------------------------------------
-   */
+ * ----------------------------------------
+ * animation slide-in-elliptic-top-fwd
+ * ----------------------------------------
+ */
 @-webkit-keyframes slide-in-elliptic-top-fwd {
   0% {
     -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
