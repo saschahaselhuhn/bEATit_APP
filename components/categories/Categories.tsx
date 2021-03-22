@@ -1,18 +1,18 @@
 import styles from "./Categories.module.css";
 
 export type Props = {
-  categorySrc: string;
-  categoryName: string;
-  opencategoryLink: string;
+  Src: string;
+  Name: string;
+  Link: string;
 };
 
-function Categories({ categorySrc, categoryName, opencategoryLink }: Props) {
+function Categories({ Src, Name, Link }: Props) {
   return (
     <div className={styles.category}>
-      <a href={opencategoryLink}>
-        <img className={styles.image} src={categorySrc} />
+      <a href={Link}>
+        <img className={styles.image} src={Src} />
         <div className={styles.name}>
-          <h3>{categoryName}</h3>
+          <h3>{Name}</h3>
         </div>
       </a>
     </div>
