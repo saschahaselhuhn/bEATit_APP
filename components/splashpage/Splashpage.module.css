@@ -1,0 +1,9 @@
+.gridContainer {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+}
+
+.gridContainer img {
+  width: 100%;
+}
