@@ -11,7 +11,7 @@ const Template: Story<Props> = (args) => <Categories {...args} />;
 
 export const CategorieCard = Template.bind({});
 CategorieCard.args = {
-  categorySrc: "./images/foodimages/paellamallorquina.jpg",
-  categoryName: "Deutschland",
-  opencategoryLink: "./images/go.svg",
+  Src: "./images/foodimages/paellamallorquina.jpg",
+  Name: "Deutschland",
+  Link: "./images/go.svg",
 };
