@@ -1,0 +1,38 @@
+.gridContainer {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas: "left center right";
+  background-color: black;
+  border-bottom: 2px solid var(--MainClr);
+  align-items: center;
+  padding: 10px;
+}
+.left {
+  grid-area: left;
+  text-align: left;
+}
+
+.left img {
+  height: 100%;
+}
+
+.center {
+  grid-area: center;
+  text-align: center;
+}
+
+.center img {
+  width: 75%;
+}
+
+.right {
+  grid-area: right;
+  text-align: right;
+}
+
+.right img {
+  height: 100%;
+}
