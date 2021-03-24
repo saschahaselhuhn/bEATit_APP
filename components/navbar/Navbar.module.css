@@ -9,7 +9,8 @@
   background-color: var(--MainClr);
   border-radius: 20px 20px 0 0;
   align-items: center;
-  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-top: 50px;
 }
 .homeBtn {
