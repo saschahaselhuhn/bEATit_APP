@@ -10,29 +10,29 @@
   align-items: center;
   padding: 10px;
 }
-.left {
+.backBtn {
   grid-area: left;
   text-align: left;
 }
 
-.left img {
+.backBtn img {
   height: 100%;
 }
 
-.center {
+.logoBtn {
   grid-area: center;
   text-align: center;
 }
 
-.center img {
+.logoBtn img {
   width: 75%;
 }
 
-.right {
+.menuBtn {
   grid-area: right;
   text-align: right;
 }
 
-.right img {
+.menuBtn img {
   height: 100%;
 }
