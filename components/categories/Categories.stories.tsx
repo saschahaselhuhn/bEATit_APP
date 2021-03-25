@@ -1,17 +1,17 @@
 import React from "react";
 import { Story, Meta } from "@storybook/react/types-6-0";
-import Categories, { Props } from "./Categories";
+import Cards, { Props } from "./Categories";
 
 export default {
-  title: "Common/Categories",
-  component: Categories,
+  title: "Common/Cards",
+  component: Cards,
 } as Meta;
 
-const Template: Story<Props> = (args) => <Categories {...args} />;
+const Template: Story<Props> = (args) => <Cards {...args} />;
 
-export const CategorieCard = Template.bind({});
-CategorieCard.args = {
-  Src: "./images/foodimages/paellamallorquina.jpg",
-  Name: "Deutschland",
-  Link: "./images/go.svg",
+export const RecipeCard = Template.bind({});
+RecipeCard.args = {
+  recipeSrc: "./images/foodimages/paellamallorquina.jpg",
+  recipeName: "Paella Mallorquina",
+  openrecipeSrc: "./images/go.svg",
 };
