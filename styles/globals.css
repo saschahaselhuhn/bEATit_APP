@@ -29,8 +29,7 @@ body {
   font-family: "SilliiWillinnRegular";
   font-style: normal;
   font-weight: light;
-  src: local("Sillii Willinn Regular"),
-    url("/fonts/SilliiWillinnFont.woff") format("woff");
+  src: url("/fonts/SilliiWillinnFont.woff") format("woff");
 }
 
 a {

@@ -1,0 +1,42 @@
+.gridContainer {
+  display: grid;
+  width: 100%;
+  height: 75px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas: "left center right";
+  background-color: var(--MainClr);
+  border-radius: 20px 20px 0 0;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 50px;
+}
+.homeBtn {
+  grid-area: left;
+  text-align: left;
+}
+
+.homeBtn img {
+  height: 100%;
+}
+
+.searchBtn {
+  grid-area: center;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.searchBtn img {
+  width: 95px;
+}
+
+.socialBtn {
+  grid-area: right;
+  text-align: right;
+}
+
+.socialBtn img {
+  height: 100%;
+}
