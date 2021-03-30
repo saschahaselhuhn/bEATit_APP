@@ -6,7 +6,7 @@ export type Props = {
   openrecipeSrc: string;
 };
 
-function Recipe({ recipeSrc, recipeName, openrecipeSrc }: Props) {
+function Recipe({ recipeSrc, recipeName }: Props) {
   return (
     <div className={styles.recipe}>
       <div className={styles.recipeImg}>
@@ -16,7 +16,7 @@ function Recipe({ recipeSrc, recipeName, openrecipeSrc }: Props) {
         <h3>{recipeName}</h3>
       </div>
       <div className={styles.recipeOpen}>
-        <img src={openrecipeSrc} />
+        <img src="./images/go.svg" />
       </div>
     </div>
   );

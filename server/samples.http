@@ -1,0 +1,7 @@
+###Get all recipes
+GET http://localhost:3000/api/recipes
+
+
+###Get single recipes
+GET http://localhost:3000/api/recipes/22
+

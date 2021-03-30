@@ -53,3 +53,11 @@ a {
   --BodyBoldFont: "TrajanProBold", sans-serif;
   --StyleFont: "SilliiwillinnRegular", sans-serif;
 }
+
+ul {
+  padding-inline-start: unset;
+}
+
+.container {
+  padding: 2rem;
+}
