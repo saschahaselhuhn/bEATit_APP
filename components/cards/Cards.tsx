@@ -16,7 +16,7 @@ function Recipe({ recipeSrc, recipeName }: Props) {
         <h3>{recipeName}</h3>
       </div>
       <div className={styles.recipeOpen}>
-        <img src="./images/go.svg" />
+        <img src="../images/go.svg" />
       </div>
     </div>
   );
