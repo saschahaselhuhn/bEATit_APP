@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { APIRecipes, getRecipe } from "../../utils/api";
 import Head from "next/head";
-import Cards from "../../components/cards/Cards";
+import Recipehead from "../../components/recipehead/Recipehead";
 
 export default function Recipe() {
   const router = useRouter();
@@ -24,13 +24,14 @@ export default function Recipe() {
     return <div>Loading...</div>;
   }
 
-  const singleRecipe = (
-    <Cards
+  const recipeHeader = (
+    <Recipehead
       recipeName={recipe.title.rendered}
-      recipeSrc={
+      recipeImg={
         recipe.delicious_recipes_metadata.imageGalleryImages[0].previewURL
       }
-      openrecipeSrc={recipe.title.rendered}
+      consumers={recipe.delicious_recipes_metadata.noOfServings}
+      difficulty={recipe.delicious_recipes_metadata.difficultyLevel}
     />
   );
 
@@ -41,9 +42,9 @@ export default function Recipe() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main>{singleRecipe}</main>
+      <main>{recipeHeader}</main>
 
-      <footer>footer</footer>
+      <footer></footer>
     </div>
   );
 }
