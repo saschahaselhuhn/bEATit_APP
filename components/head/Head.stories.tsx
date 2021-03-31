@@ -11,7 +11,7 @@ const Template: Story<Props> = (args) => <Headerbar {...args} />;
 
 export const Header = Template.bind({});
 Header.args = {
-  backBtn: "./images/backBtn.svg",
-  logoBtn: "./images/logowhite.svg",
-  menuBtn: "./images/menuBtn.svg",
+  backBtn: "../images/backBtn.svg",
+  logoBtn: "../images/logowhite.svg",
+  menuBtn: "../images/menuBtn.svg",
 };

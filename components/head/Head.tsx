@@ -10,13 +10,13 @@ function Headerbar({ backBtn, logoBtn, menuBtn }: Props) {
   return (
     <div className={styles.gridContainer}>
       <div className={styles.backBtn}>
-        <img src={backBtn} />
+        <img src="../images/backBtn.svg" />
       </div>
       <div className={styles.logoBtn}>
-        <img src={logoBtn} />
+        <img src="../images/logowhite.svg" />
       </div>
       <div className={styles.menuBtn}>
-        <img src={menuBtn} />
+        <img src="../images/menuBtn.svg" />
       </div>
     </div>
   );
