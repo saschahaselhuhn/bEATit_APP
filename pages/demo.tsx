@@ -33,6 +33,7 @@ export default function Home() {
         <title>Rezepte</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div className="container">
         <ul>{recipeItems}</ul>
       </div>

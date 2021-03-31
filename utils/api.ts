@@ -2,12 +2,17 @@ export type APIRecipes = {
   id: string;
   slug: string;
   title: { rendered: string };
-  delicious_recipes_metadata: { imageGalleryImages: ImageGalleryImage[] };
+  delicious_recipes_metadata: {
+    imageGalleryImages: ImageGalleryImage[];
+    difficultyLevel: string;
+    noOfServings: string;
+  };
 };
 export type ImageGalleryImage = {
   imageID: string;
   previewURL: string;
 };
+
 async function fetchURL<T>(url: string): Promise<T> {
   const response = await fetch(url);
   return await response.json();

@@ -10,13 +10,13 @@ function Navbar({ homeBtn, searchBtn, socialBtn }: Props) {
   return (
     <div className={styles.gridContainer}>
       <div className={styles.homeBtn}>
-        <img src={homeBtn} />
+        <img src="./images/homeBtn.svg" />
       </div>
       <div className={styles.searchBtn}>
-        <img src={searchBtn} />
+        <img src="./images/searchBtn.svg" />
       </div>
       <div className={styles.socialBtn}>
-        <img src={socialBtn} />
+        <img src="./images/shareBtn.svg" />
       </div>
     </div>
   );
