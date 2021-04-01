@@ -1,12 +1,6 @@
 import styles from "./Head.module.css";
 
-export type Props = {
-  backBtn: string;
-  logoBtn: string;
-  menuBtn: string;
-};
-
-function Headerbar({ backBtn, logoBtn, menuBtn }: Props) {
+function Headerbar() {
   return (
     <div className={styles.gridContainer}>
       <div className={styles.backBtn}>
