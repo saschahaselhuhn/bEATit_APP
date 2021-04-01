@@ -1,7 +1,7 @@
 export type APIRecipes = {
   id: string;
   slug: string;
-  title: { rendered: string };
+  title: string;
   delicious_recipes_metadata: {
     imageGalleryImages: ImageGalleryImage[];
     difficultyLevel: string;
