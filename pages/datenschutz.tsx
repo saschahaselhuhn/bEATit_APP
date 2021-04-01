@@ -9,7 +9,7 @@ export default function Home() {
         <title>Datenschutz</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Headerbar></Headerbar>
+      <Headerbar />
       <main className={styles.staticmain}>
         <p>
           <span>Datenschutz</span>
