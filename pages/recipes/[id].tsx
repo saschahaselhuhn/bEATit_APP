@@ -22,17 +22,6 @@ export default function Recipe() {
     return <div>Loading...</div>;
   }
 
-  /*   const recipeHeader = (
-    <Recipehead
-      recipeName={recipe.title.rendered}
-      recipeImg={
-        recipe.delicious_recipes_metadata.imageGalleryImages[0].previewURL
-      }
-      consumers={recipe.delicious_recipes_metadata.noOfServings}
-      difficulty={recipe.delicious_recipes_metadata.difficultyLevel}
-    />
-  ); */
-
   return (
     <div>
       <Head>
@@ -40,7 +29,14 @@ export default function Recipe() {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <main>{recipe.title}</main>
+      <main>
+        <Recipehead
+          recipeName={recipe.title}
+          recipeImg={recipe.featured_image.url}
+          consumers={recipe.beatit_portions}
+          difficulty={recipe.beatit_skills}
+        />
+      </main>
       <footer></footer>
     </div>
   );
