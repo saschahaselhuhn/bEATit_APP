@@ -15,7 +15,6 @@ export default function Recipe() {
     getRecipe(id).then((newRecipe) => {
       setRecipe(newRecipe);
     });
-    console.log(id);
   }, [id]);
 
   if (!recipe) {
