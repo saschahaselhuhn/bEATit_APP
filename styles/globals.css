@@ -61,3 +61,8 @@ ul {
 .container {
   padding: 2rem;
 }
+
+.staticmain {
+  font-family: var(--BodyFont);
+  color: var(--PrimaryClr);
+}
