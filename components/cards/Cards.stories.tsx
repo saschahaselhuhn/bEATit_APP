@@ -10,8 +10,9 @@ export default {
 const Template: Story<Props> = (args) => <Cards {...args} />;
 
 export const RecipeCard = Template.bind({});
+const newLocal = "./images/go.svg";
 RecipeCard.args = {
   recipeSrc: "./images/foodimages/paellamallorquina.jpg",
   recipeName: "Paella Mallorquina",
-  openrecipeSrc: "./images/go.svg",
+  openrecipeSrc: newLocal,
 };
