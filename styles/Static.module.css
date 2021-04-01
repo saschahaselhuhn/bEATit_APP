@@ -1,0 +1,26 @@
+.container {
+  min-height: 100vh;
+  max-width: 100vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.staticmain {
+  padding: 0 2rem 0 2rem;
+  max-width: 100vw;
+  font-family: var(--BodyFont);
+  color: var(--PrimaryClr);
+  text-align: center;
+}
