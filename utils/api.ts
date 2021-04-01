@@ -1,16 +1,15 @@
 export type APIRecipes = {
-  id: string;
-  slug: string;
-  title: { rendered: string };
-  delicious_recipes_metadata: {
-    imageGalleryImages: ImageGalleryImage[];
-    difficultyLevel: string;
-    noOfServings: string;
-  };
+  id: number;
+  title: string;
+  beatit_portions: string;
+  beatit_time: string;
+  beatit_skills: string;
+  featured_image: FeaturedImage;
 };
-export type ImageGalleryImage = {
-  imageID: string;
-  previewURL: string;
+export type FeaturedImage = {
+  id: number;
+  url: string;
+  alt: string;
 };
 
 async function fetchURL<T>(url: string): Promise<T> {

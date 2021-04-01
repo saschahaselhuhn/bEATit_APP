@@ -10,4 +10,9 @@ export default {
 const Template: Story<Props> = (args) => <Recipehead {...args} />;
 
 export const Recipeheaddiv = Template.bind({});
-Recipeheaddiv.args = {};
+Recipeheaddiv.args = {
+  recipeImg: "",
+  recipeName: "",
+  consumers: "",
+  difficulty: "bla",
+};

@@ -17,11 +17,9 @@ export default function Home() {
     <Link href={`/recipes/${recipe.id}`} key={recipe.id}>
       <a>
         <Cards
-          recipeName={recipe.title.rendered}
-          recipeSrc={
-            recipe.delicious_recipes_metadata.imageGalleryImages[0].previewURL
-          }
-          openrecipeSrc={recipe.title.rendered}
+          recipeName={recipe.title}
+          recipeSrc={recipe.featured_image.url}
+          openrecipeSrc={recipe.featured_image.url}
         />
       </a>
     </Link>
