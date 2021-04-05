@@ -1,24 +1,20 @@
 import styles from "./Splashpage.module.css";
 
-export type Props = {
-  topImage: string;
-  centerImage: string;
-  bottomImage: string;
-};
-
-function Splashpage({ topImage, centerImage, bottomImage }: Props) {
+function SplashScreen() {
   return (
     <div className={styles.gridContainer}>
-      <div className={styles.center}>
-        <img className={styles.image} src={topImage} />
-      </div>
-      <div className={styles.center}>
-        <img className={styles.image} src={centerImage} />
-      </div>
-      <div className={styles.center}>
-        <img className={styles.image} src={bottomImage} />
-      </div>
+      <a href="../overview">
+        <div className={styles.center}>
+          <img className={styles.image} src="../images/splash/splash_01.png" />
+        </div>
+        <div className={styles.center}>
+          <img className={styles.image} src="../images/splash/splash_02.png" />
+        </div>
+        <div className={styles.center}>
+          <img className={styles.image} src="../images/splash/splash_03.png" />
+        </div>
+      </a>
     </div>
   );
 }
-export default Splashpage;
+export default SplashScreen;

@@ -9,6 +9,8 @@
   border-bottom: 2px solid var(--MainClr);
   align-items: center;
   padding: 10px;
+  position: sticky;
+  top: 0;
 }
 .backBtn {
   grid-area: left;
