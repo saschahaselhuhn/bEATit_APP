@@ -1,0 +1,33 @@
+.MainMenu {
+  text-align: center;
+  color: var(--PrimaryClr);
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.623);
+}
+.menuHead {
+  font-family: var(--StyleFont);
+  font-size: 3em;
+}
+
+.menuElements {
+  font-family: var(--BodyFont);
+}
+
+.menuElements h3 {
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+.social img {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+
+.closeBtn {
+  margin-top: 1em;
+  width: 3em;
+}
