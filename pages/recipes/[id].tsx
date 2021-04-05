@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import { APIRecipes, getRecipe } from "../../utils/api";
 import Head from "next/head";
 import Recipehead from "../../components/recipehead/Recipehead";
+import Headerbar from "../../components/head/Head";
+import Navigationbar from "../../components/navbar/Navbar";
 
 export default function Recipe() {
   const router = useRouter();
@@ -29,14 +31,18 @@ export default function Recipe() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
+        <Headerbar />
         <Recipehead
           recipeName={recipe.title}
           recipeImg={recipe.featured_image.url}
           consumers={recipe.beatit_portions}
           difficulty={recipe.beatit_skills}
+          time={recipe.beatit_time}
         />
       </main>
-      <footer></footer>
+      <footer>
+        <Navigationbar />
+      </footer>
     </div>
   );
 }

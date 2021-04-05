@@ -5,9 +5,16 @@ export type Props = {
   recipeName: string;
   consumers: string;
   difficulty: string;
+  time: string;
 };
 
-function Recipehead({ recipeImg, recipeName, consumers, difficulty }: Props) {
+function Recipehead({
+  recipeImg,
+  recipeName,
+  consumers,
+  difficulty,
+  time,
+}: Props) {
   return (
     <div className={styles.recipe}>
       <div
@@ -25,10 +32,14 @@ function Recipehead({ recipeImg, recipeName, consumers, difficulty }: Props) {
           <div className={styles.ConsumerIco}>
             <img src="../images/consumers.svg" />
           </div>
+          <div className={styles.TimeIco}>
+            <img src="../images/time.svg" />
+          </div>
           <div className={styles.DifficultyIco}>
             <img src="../images/difficulty.svg" />
           </div>
           <div className={styles.ConsumerVal}>{consumers}</div>
+          <div className={styles.TimeVal}>{time}</div>
 
           <div className={styles.DifficultyVal}>{difficulty}</div>
         </div>

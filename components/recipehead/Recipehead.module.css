@@ -49,15 +49,19 @@
   border-radius: 10px;
   width: 40%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 0 0;
   grid-template-areas:
-    "ConsumerIco DifficultyIco"
-    "ConsumerVal DifficultyVal";
+    "ConsumerIco TimeIco DifficultyIco"
+    "ConsumerVal TimeVal DifficultyVal";
 }
 .ConsumerIco {
   grid-area: ConsumerIco;
+}
+
+.TimeIco {
+  grid-area: TimeIco;
 }
 
 .DifficultyIco {
@@ -65,6 +69,10 @@
 }
 .ConsumerVal {
   grid-area: ConsumerVal;
+}
+
+.TimeVal {
+  grid-area: TimeVal;
 }
 
 .DifficultyVal {
