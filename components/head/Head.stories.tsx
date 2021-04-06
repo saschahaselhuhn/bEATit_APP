@@ -1,9 +1,13 @@
 import React from "react";
-import { Meta } from "@storybook/react/types-6-0";
-import Headerbar from "./Head";
+import { Story, Meta } from "@storybook/react/types-6-0";
+import Headerbar, { HeaderProps } from "./Head";
 
 export default {
   title: "Common/headerBar",
+  component: Headerbar,
 } as Meta;
 
-export const headerBar = () => <Headerbar />;
+const Template: Story<HeaderProps> = (args) => <Headerbar {...args} />;
+
+export const headerBar = Template.bind({});
+headerBar.args = {};

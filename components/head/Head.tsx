@@ -1,7 +1,11 @@
 import styles from "./Head.module.css";
 import Router from "next/router";
 
-function Headerbar() {
+export type HeaderProps = {
+  onBurgerClick: () => void;
+};
+
+function Headerbar({ onBurgerClick }: HeaderProps) {
   return (
     <div className={styles.gridContainer}>
       <div className={styles.backBtn}>
@@ -11,7 +15,7 @@ function Headerbar() {
         <img src="../images/logowhite.svg" />
       </div>
       <div className={styles.menuBtn}>
-        <img src="../images/menuBtn.svg" />
+        <img onClick={onBurgerClick} src="../images/menuBtn.svg" />
       </div>
     </div>
   );

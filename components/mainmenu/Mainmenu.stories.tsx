@@ -1,9 +1,13 @@
 import React from "react";
-import { Meta } from "@storybook/react/types-6-0";
-import MainMenu from "./Mainmenu";
+import { Story, Meta } from "@storybook/react/types-6-0";
+import MainMenu, { HeaderProps } from "./Mainmenu";
 
 export default {
   title: "Common/MainMenu",
+  component: MainMenu,
 } as Meta;
 
-export const beatitmenu = () => <MainMenu />;
+const Template: Story<HeaderProps> = (args) => <MainMenu {...args} />;
+
+export const beatitmenu = Template.bind({});
+beatitmenu.args = {};
