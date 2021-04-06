@@ -1,6 +1,6 @@
 import styles from "./Mainmenu.module.css";
 
-type HeaderProps = {
+export type HeaderProps = {
   onClose: () => void;
   open: boolean;
 };
