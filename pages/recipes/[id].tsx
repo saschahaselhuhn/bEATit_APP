@@ -5,8 +5,10 @@ import Head from "next/head";
 import Recipehead from "../../components/recipehead/Recipehead";
 import Headerbar from "../../components/head/Head";
 import Navigationbar from "../../components/navbar/Navbar";
+import MainMenu from "../../components/mainmenu/Mainmenu";
 
 export default function Recipe() {
+  const [showMenu, setShowMenu] = useState<boolean>(false);
   const router = useRouter();
   const { id: idQuery } = router.query;
   const [recipe, setRecipe] = useState<APIRecipes>(null);
@@ -31,7 +33,7 @@ export default function Recipe() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <Headerbar />
+        <Headerbar onBurgerClick={() => setShowMenu(true)} />
         <Recipehead
           recipeName={recipe.title}
           recipeImg={recipe.featured_image.url}
@@ -42,7 +44,8 @@ export default function Recipe() {
       </main>
       <footer>
         <Navigationbar />
-      </footer>
+      </footer>{" "}
+      <MainMenu open={showMenu} onClose={() => setShowMenu(false)} />
     </div>
   );
 }
