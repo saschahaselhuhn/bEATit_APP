@@ -7,7 +7,7 @@ import Headerbar from "../../components/head/Head";
 import Navigationbar from "../../components/navbar/Navbar";
 import MainMenu from "../../components/mainmenu/Mainmenu";
 import Ingredientstabs from "../../components/ingredientstabs/Ingredientstabs";
-
+import Recipefields from "../../components/recipefields/Recipefields";
 export default function Recipe() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const router = useRouter();
@@ -45,9 +45,15 @@ export default function Recipe() {
         {/* start ingredients - steps buttons */}
         <Ingredientstabs stepslink={`/${recipe.id}/steps`} />
         {/* end ingredients - steps buttons */}
+        <div className="recipeheadline">Zutaten</div>
+        <Recipefields
+          wert={recipe.beatit_zutaten.menge}
+          einheit={recipe.beatit_zutaten.Einheit}
+          zutat={recipe.beatit_zutaten.Zutat}
+        />{" "}
       </main>
       <footer>
-        <Navigationbar />
+        <Navigationbar onBurgerClick={() => setShowMenu(true)} />
       </footer>{" "}
       <MainMenu open={showMenu} onClose={() => setShowMenu(false)} />
     </div>

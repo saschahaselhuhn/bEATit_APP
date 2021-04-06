@@ -67,3 +67,10 @@ ul {
   font-family: var(--BodyFont);
   color: var(--PrimaryClr);
 }
+
+.recipeheadline {
+  text-align: center;
+  color: var(--PrimaryClr);
+  font-family: var(--BodyFont);
+  font-size: 2em;
+}

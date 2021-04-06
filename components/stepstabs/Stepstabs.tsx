@@ -7,12 +7,12 @@ export type Props = {
 function Stepstabs({ ingredientslink }: Props) {
   return (
     <div className={styles.gridContainer}>
-      <div className={styles.ingredientsBtn}>
+      <div className={styles.ingredients}>
         <a href={ingredientslink}>
           <img src="../images/ingredientsInactiveBtn.svg" />{" "}
         </a>
       </div>
-      <div className={styles.stepsBtn}>
+      <div className={styles.steps}>
         <img src="../images/stepsActiveBtn.svg" />
       </div>
     </div>

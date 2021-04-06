@@ -48,7 +48,7 @@ export default function Recipe() {
         {/* end ingredients - steps buttons */}
       </main>
       <footer>
-        <Navigationbar />
+        <Navigationbar onBurgerClick={() => setShowMenu(true)} />
       </footer>{" "}
       <MainMenu open={showMenu} onClose={() => setShowMenu(false)} />
     </div>

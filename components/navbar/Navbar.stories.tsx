@@ -1,9 +1,13 @@
 import React from "react";
-import { Meta } from "@storybook/react/types-6-0";
-import Navigationbar from "./Navbar";
+import { Meta, Story } from "@storybook/react/types-6-0";
+import Navigationbar, { HeaderProps } from "./Navbar";
 
 export default {
   title: "Common/Navbar",
+  component: Navigationbar,
 } as Meta;
 
-export const Navbar = () => <Navigationbar />;
+const Template: Story<HeaderProps> = (args) => <Navigationbar {...args} />;
+
+export const navigationBar = Template.bind({});
+navigationBar.args = {};
