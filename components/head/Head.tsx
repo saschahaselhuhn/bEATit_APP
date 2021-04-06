@@ -1,7 +1,7 @@
 import styles from "./Head.module.css";
 import Router from "next/router";
 
-type HeaderProps = {
+export type HeaderProps = {
   onBurgerClick: () => void;
 };
 
