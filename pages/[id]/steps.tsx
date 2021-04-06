@@ -6,6 +6,7 @@ import Recipehead from "../../components/recipehead/Recipehead";
 import Headerbar from "../../components/head/Head";
 import Navigationbar from "../../components/navbar/Navbar";
 import MainMenu from "../../components/mainmenu/Mainmenu";
+import Stepstabs from "../../components/stepstabs/Stepstabs";
 
 export default function Recipe() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -41,6 +42,10 @@ export default function Recipe() {
           difficulty={recipe.beatit_skills}
           time={recipe.beatit_time}
         />
+        {/* ingredients - steps buttons  */}
+        <Stepstabs ingredientslink={`/${recipe.id}/`} />
+
+        {/* end ingredients - steps buttons */}
       </main>
       <footer>
         <Navigationbar />

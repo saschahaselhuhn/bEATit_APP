@@ -18,7 +18,7 @@ export default function Home() {
   }, []);
 
   const recipeItems = recipes.map((recipe) => (
-    <Link href={`/recipes/${recipe.id}`} key={recipe.id}>
+    <Link href={`/${recipe.id}`} key={recipe.id}>
       <a>
         <Cards
           recipeName={recipe.title}

@@ -1,0 +1,15 @@
+.gridContainer {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0 0;
+  grid-template-areas: "ingredients steps";
+  margin: 2em;
+}
+.ingredients {
+  grid-area: ingredients;
+}
+.steps {
+  grid-area: steps;
+}
