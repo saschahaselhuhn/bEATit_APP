@@ -1,15 +1,19 @@
 import Head from "next/head";
 import styles from "../styles/Static.module.css";
 import Headerbar from "../components/head/Head";
+import MainMenu from "../components/mainmenu/Mainmenu";
+import { useState } from "react";
 
 export default function Home() {
+  const [showMenu, setShowMenu] = useState<boolean>(false);
+
   return (
     <div className={styles.container}>
       <Head>
         <title>Impressum</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Headerbar />
+      <Headerbar onBurgerClick={() => setShowMenu(true)} />
       <main className={styles.staticmain}>
         <p>
           <span>IMPRESSUM</span>
@@ -159,7 +163,8 @@ export default function Home() {
           </a>
         </p>
         <p>&nbsp;</p>
-      </main>
+      </main>{" "}
+      <MainMenu open={showMenu} onClose={() => setShowMenu(false)} />
     </div>
   );
 }
