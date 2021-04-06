@@ -6,8 +6,33 @@
   align-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.623);
+  background-color: rgba(0, 0, 0, 0.918);
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  pointer-events: none;
 }
+
+.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.MainMenuInner {
+  width: 90vw;
+  height: 90vh;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  border: 3px solid white;
+}
+
+.MainMenuInner hr {
+  width: 50vw;
+}
+
 .menuHead {
   font-family: var(--StyleFont);
   font-size: 3em;

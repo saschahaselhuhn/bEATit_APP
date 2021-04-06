@@ -5,9 +5,11 @@ import { APIRecipes, getRecipes } from "../utils/api";
 import Link from "next/link";
 import Headerbar from "../components/head/Head";
 import Navigationbar from "../components/navbar/Navbar";
+import MainMenu from "../components/mainmenu/Mainmenu";
 
 export default function Home() {
   const [recipes, setRecipes] = useState<APIRecipes[]>([]);
+  const [showMenu, setShowMenu] = useState<boolean>(false);
 
   useEffect(() => {
     getRecipes().then((newRecipes) => {
@@ -33,11 +35,13 @@ export default function Home() {
         <title>Rezepte</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Headerbar />
+
+      <Headerbar onBurgerClick={() => setShowMenu(true)} />
       <div className="container">
         <ul>{recipeItems}</ul>
       </div>
       <Navigationbar />
+      <MainMenu open={showMenu} onClose={() => setShowMenu(false)} />
     </div>
   );
 }
