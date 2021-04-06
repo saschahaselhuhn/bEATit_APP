@@ -1,0 +1,4 @@
+<svg id="RezeptRot" xmlns="http://www.w3.org/2000/svg" width="137" height="37" viewBox="0 0 137 37">
+  <path id="Pfad_45" data-name="Pfad 45" d="M5,0H132a5,5,0,0,1,5,5V32a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" fill="#8e0000"/>
+  <text id="Rezept" transform="translate(32 25)" fill="#fff" font-size="20" font-family="TrajanPro-Regular, Trajan Pro"><tspan x="0" y="0">Rezept</tspan></text>
+</svg>
