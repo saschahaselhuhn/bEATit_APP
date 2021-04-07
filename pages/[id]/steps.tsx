@@ -44,7 +44,6 @@ export default function Recipe() {
         />
         {/* ingredients - steps buttons  */}
         <Stepstabs ingredientslink={`/${recipe.id}/`} />
-
         {/* end ingredients - steps buttons */}
       </main>
       <footer>
