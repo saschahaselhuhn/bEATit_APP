@@ -6,6 +6,12 @@ export type APIRecipes = {
   beatit_skills: string;
   featured_image: FeaturedImage;
   beatit_zutaten: Zutat[];
+  beatit_steps: Schritt[];
+};
+
+export type Schritt = {
+  stepname: string;
+  stepindstruction: string;
 };
 
 export type Zutat = {

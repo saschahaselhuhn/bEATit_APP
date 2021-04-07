@@ -7,6 +7,7 @@ import Headerbar from "../../components/head/Head";
 import Navigationbar from "../../components/navbar/Navbar";
 import MainMenu from "../../components/mainmenu/Mainmenu";
 import Stepstabs from "../../components/stepstabs/Stepstabs";
+import Stepfields from "../../components/stepfields/Stepfields";
 
 export default function Recipe() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -45,6 +46,18 @@ export default function Recipe() {
         {/* ingredients - steps buttons  */}
         <Stepstabs ingredientslink={`/${recipe.id}/`} />
         {/* end ingredients - steps buttons */}
+        <div className="recipeheadline">Rezept</div>
+        {recipe &&
+          recipe.beatit_steps.map((schritt) => {
+            return (
+              <Stepfields
+                key={schritt.stepname}
+                stepname={schritt.stepname}
+                stepinstruction={schritt.stepindstruction}
+              />
+            );
+          })}{" "}
+        <div className="placeholder"></div>
       </main>
       <footer>
         <Navigationbar onBurgerClick={() => setShowMenu(true)} />
