@@ -5,7 +5,15 @@ export type APIRecipes = {
   beatit_time: string;
   beatit_skills: string;
   featured_image: FeaturedImage;
+  beatit_zutaten: Zutat[];
 };
+
+export type Zutat = {
+  menge: string;
+  Einheit: string;
+  Zutat: string;
+};
+
 export type FeaturedImage = {
   id: number;
   url: string;

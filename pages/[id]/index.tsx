@@ -46,11 +46,18 @@ export default function Recipe() {
         <Ingredientstabs stepslink={`/${recipe.id}/steps`} />
         {/* end ingredients - steps buttons */}
         <div className="recipeheadline">Zutaten</div>
-        <Recipefields
-          wert={recipe.beatit_zutaten.menge}
-          einheit={recipe.beatit_zutaten.Einheit}
-          zutat={recipe.beatit_zutaten.Zutat}
-        />{" "}
+        {recipe &&
+          recipe.beatit_zutaten.map((zutat) => {
+            return (
+              <Recipefields
+                key={zutat.Zutat}
+                wert={zutat.menge}
+                einheit={zutat.Einheit}
+                zutat={zutat.Zutat}
+              />
+            );
+          })}
+        <div className="placeholder"></div>
       </main>
       <footer>
         <Navigationbar onBurgerClick={() => setShowMenu(true)} />

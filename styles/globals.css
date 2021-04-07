@@ -73,4 +73,9 @@ ul {
   color: var(--PrimaryClr);
   font-family: var(--BodyFont);
   font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.placeholder {
+  height: 120px;
 }
