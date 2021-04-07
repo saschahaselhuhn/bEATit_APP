@@ -1,0 +1,45 @@
+.gridContainer {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1.2fr 1.8fr 7fr;
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  grid-template-areas: "wert einheit zutat";
+  margin: 0 2em 0 2em;
+  color: var(--PrimaryClr);
+  font-family: var(--BodyFont);
+  line-height: 0em;
+  margin-bottom: 10px;
+}
+.wert {
+  grid-area: wert;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid white;
+  border-radius: 5px;
+  min-height: 35px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+.einheit {
+  grid-area: einheit;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid white;
+  border-radius: 5px;
+  min-height: 35px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.zutat {
+  grid-area: zutat;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid white;
+  border-radius: 5px;
+  min-height: 35px;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  line-height: 1.5em;
+}

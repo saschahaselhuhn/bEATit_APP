@@ -3,13 +3,15 @@
   text-align: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 0 0;
+  column-gap: 10px;
   grid-template-areas: "ingredients steps";
   margin: 2em;
 }
 .ingredients {
   grid-area: ingredients;
+  text-align: right;
 }
 .steps {
   grid-area: steps;
+  text-align: left;
 }

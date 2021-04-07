@@ -1,6 +1,9 @@
 import styles from "./Navbar.module.css";
+export type HeaderProps = {
+  onBurgerClick: () => void;
+};
 
-function Navigationbar() {
+function Navigationbar({ onBurgerClick }: HeaderProps) {
   return (
     <div className={styles.gridContainer}>
       <div className={styles.homeBtn}>
@@ -9,7 +12,7 @@ function Navigationbar() {
         </a>
       </div>
       <div className={styles.searchBtn}>
-        <img src="../images/searchBtn.svg" />
+        <img onClick={onBurgerClick} src="../images/mainmenuIco2.svg" />
       </div>
       <div className={styles.socialBtn}>
         <a

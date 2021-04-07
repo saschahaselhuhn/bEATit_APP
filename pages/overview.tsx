@@ -40,7 +40,7 @@ export default function Home() {
       <div className="container">
         <ul>{recipeItems}</ul>
       </div>
-      <Navigationbar />
+      <Navigationbar onBurgerClick={() => setShowMenu(true)} />
       <MainMenu open={showMenu} onClose={() => setShowMenu(false)} />
     </div>
   );

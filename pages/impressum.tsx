@@ -3,6 +3,7 @@ import styles from "../styles/Static.module.css";
 import Headerbar from "../components/head/Head";
 import MainMenu from "../components/mainmenu/Mainmenu";
 import { useState } from "react";
+import Navigationbar from "../components/navbar/Navbar";
 
 export default function Home() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -164,6 +165,7 @@ export default function Home() {
         </p>
         <p>&nbsp;</p>
       </main>{" "}
+      <Navigationbar onBurgerClick={() => setShowMenu(true)} />
       <MainMenu open={showMenu} onClose={() => setShowMenu(false)} />
     </div>
   );
