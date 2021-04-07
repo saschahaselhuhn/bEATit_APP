@@ -10,6 +10,7 @@
     "stepname"
     "stepinstruction";
   margin-bottom: 5em;
+  font-size: 0.8em;
 }
 .stepname {
   grid-area: stepname;
