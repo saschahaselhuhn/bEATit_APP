@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  max-height: 150px;
+  max-height: 100px;
   grid-template-areas:
     "Img Img Name Name Name"
     "Img Img Name Name Name"
@@ -26,7 +26,7 @@
   text-align: center;
   line-height: 1.5em;
   grid-area: Name;
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-family: var(--StyleFont);
   color: var(--MainClr);
   display: flex;
@@ -55,7 +55,7 @@
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
 }
 .recipeOpen img {
-  width: 10em;
+  width: 7em;
 }
 
 .container {
