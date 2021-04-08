@@ -21,8 +21,8 @@
 }
 
 .MainMenuInner {
-  width: 90vw;
-  height: 90vh;
+  width: 85vw;
+  height: 85vh;
   display: grid;
   justify-content: center;
   align-content: center;
@@ -30,12 +30,12 @@
 }
 
 .MainMenuInner hr {
-  width: 50vw;
+  width: 40vw;
 }
 
 .menuHead {
   font-family: var(--StyleFont);
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .menuElements {
@@ -44,7 +44,7 @@
 
 .menuElements h3 {
   margin: 0.5em;
-  font-size: 1.5em;
+  font-size: 1.1em;
 }
 
 .social img {
