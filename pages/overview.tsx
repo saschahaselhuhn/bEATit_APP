@@ -6,6 +6,7 @@ import Link from "next/link";
 import Headerbar from "../components/head/Head";
 import Navigationbar from "../components/navbar/Navbar";
 import MainMenu from "../components/mainmenu/Mainmenu";
+import Categoryhead from "../components/categoryhead/Categoryhead";
 
 export default function Home() {
   const [recipes, setRecipes] = useState<APIRecipes[]>([]);
@@ -16,7 +17,6 @@ export default function Home() {
       setRecipes(newRecipes);
     });
   }, []);
-
   const recipeItems = recipes.map((recipe) => (
     <Link href={`/${recipe.id}`} key={recipe.id}>
       <a>
@@ -35,9 +35,14 @@ export default function Home() {
         <title>Rezepte</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Headerbar onBurgerClick={() => setShowMenu(true)} />
+      <Categoryhead
+        categoryName="Rezepte"
+        categoryImg={"../images/eat-2834549_640.jpg"}
+      />
+      ;
       <div className="container">
+        {" "}
         <ul>{recipeItems}</ul>
       </div>
       <Navigationbar onBurgerClick={() => setShowMenu(true)} />
