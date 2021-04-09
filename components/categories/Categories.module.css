@@ -1,8 +1,36 @@
+.gridContainer {
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 10px;
+  grid-template-areas: "deutsch spanisch italienisch amerikanisch";
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+}
+
+.gridContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.deutsch {
+  grid-area: deutsch;
+}
+.spanisch {
+  grid-area: spanisch;
+}
+.italienisch {
+  grid-area: italienisch;
+}
+.amerikanisch {
+  grid-area: amerikanisch;
+}
+
 .category {
   border-radius: 50%;
-  border: 3px solid var(--MainClr);
-  width: 30vw;
-  height: 30vw;
+  border: 2px solid var(--MainClr);
+  width: 90px;
+  height: 90px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
   animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
@@ -13,16 +41,17 @@
   width: 100%;
 }
 .name {
-  font-size: 0.6;
+  font-size: 0.8em;
   text-align: center;
-  background-color: white;
-  color: var(--MainClr);
-  margin-top: -50%;
+  background-color: var(--MainClr);
+  margin-top: -70%;
   position: relative;
   z-index: 2;
   font-family: var(--StyleFont);
+  color: white;
 }
-h3 {
+
+.category h3 {
   margin: unset;
 }
 

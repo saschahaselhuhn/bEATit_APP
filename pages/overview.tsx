@@ -7,6 +7,7 @@ import Headerbar from "../components/head/Head";
 import Navigationbar from "../components/navbar/Navbar";
 import MainMenu from "../components/mainmenu/Mainmenu";
 import Categoryhead from "../components/categoryhead/Categoryhead";
+import Categories from "../components/categories/Categories";
 
 export default function Home() {
   const [recipes, setRecipes] = useState<APIRecipes[]>([]);
@@ -45,6 +46,13 @@ export default function Home() {
         categoryImg={"../images/eat-2834549_640.jpg"}
       />
       ;
+      <Categories
+        Src="../images/categoryBG.jpg"
+        LinkDeutsch="/deutsch"
+        LinkSpanisch="/spanisch"
+        LinkItalienisch="/italienisch"
+        LinkAmerikanisch="/amerikanisch"
+      />
       <div className="container">
         {" "}
         <ul>{recipeItems}</ul>
