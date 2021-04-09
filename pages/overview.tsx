@@ -57,6 +57,7 @@ export default function Home() {
         {" "}
         <ul>{recipeItems}</ul>
       </div>
+      <div className="placeholder"></div>
       <Navigationbar onBurgerClick={() => setShowMenu(true)} />
       <MainMenu open={showMenu} onClose={() => setShowMenu(false)} />
     </div>
