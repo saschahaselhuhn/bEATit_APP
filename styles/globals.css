@@ -4,6 +4,7 @@ body {
   max-height: 100vh;
   background-color: black;
   background-image: url(/images/woodenBG@2x.png);
+  background-attachment: fixed;
   background-size: cover;
   padding: 0;
   margin: 0;
