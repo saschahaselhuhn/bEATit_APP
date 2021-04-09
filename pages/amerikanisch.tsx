@@ -9,12 +9,12 @@ import MainMenu from "../components/mainmenu/Mainmenu";
 import Categoryhead from "../components/categoryhead/Categoryhead";
 import Categories from "../components/categories/Categories";
 
-export default function Spanish() {
+export default function Amerikanisch() {
   const [recipes, setRecipes] = useState<APIRecipes[]>([]);
   const [showMenu, setShowMenu] = useState<boolean>(false);
 
   useEffect(() => {
-    getRecipes("Spanisch").then((newRecipes) => {
+    getRecipes("Amerikanisch").then((newRecipes) => {
       setRecipes(newRecipes);
     });
   }, []);
@@ -34,7 +34,7 @@ export default function Spanish() {
   return (
     <div>
       <Head>
-        <title>Spanische Rezepte</title>
+        <title>Amerikanische Rezepte</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="viewport"
@@ -43,7 +43,7 @@ export default function Spanish() {
       </Head>
       <Headerbar onBurgerClick={() => setShowMenu(true)} />
       <Categoryhead
-        categoryName="Spanien"
+        categoryName="Amerika"
         categoryImg={"../images/eat-2834549_640.jpg"}
       />
       ;

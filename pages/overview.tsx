@@ -48,10 +48,10 @@ export default function Home() {
       ;
       <Categories
         Src="../images/categoryBG.jpg"
-        LinkDeutsch="www"
-        LinkSpanisch="www"
-        LinkItalienisch="www"
-        LinkAmerikanisch="www"
+        LinkDeutsch="/deutsch"
+        LinkSpanisch="/spanisch"
+        LinkItalienisch="/italienisch"
+        LinkAmerikanisch="/amerikanisch"
       />
       <div className="container">
         {" "}
