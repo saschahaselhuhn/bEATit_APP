@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 250px;
+  height: 200px;
   background-size: cover;
   background-position: center center;
 }
@@ -26,7 +26,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 250px;
+  height: 200px;
   background-image: url("/images/MainHeader.svg");
   background-size: 110%;
   background-position: center center;
