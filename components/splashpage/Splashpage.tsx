@@ -8,7 +8,10 @@ function SplashScreen() {
           <img className={styles.image} src="../images/splash/splash_01.png" />
         </div>
         <div className={styles.center}>
-          <img className={styles.image} src="../images/splash/splash_02.png" />
+          <img
+            className={styles.centerimage}
+            src="../images/splash/splash_02.png"
+          />
         </div>
         <div className={styles.center}>
           <img className={styles.image} src="../images/splash/splash_03.png" />
