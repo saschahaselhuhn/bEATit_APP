@@ -11,6 +11,7 @@
   padding: 10px;
   position: sticky;
   top: 0;
+  z-index: 500;
 }
 .backBtn {
   grid-area: left;

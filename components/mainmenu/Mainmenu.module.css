@@ -7,7 +7,7 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.918);
-  z-index: 99;
+  z-index: 999;
   position: fixed;
   top: 0;
   opacity: 0;
